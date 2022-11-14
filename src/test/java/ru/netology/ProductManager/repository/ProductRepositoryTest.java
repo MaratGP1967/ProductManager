@@ -21,7 +21,7 @@ public class ProductRepositoryTest {
         mass.save(product4);
         mass.save(product5);
 
-        Product[] expected = {product1, product2, product3,product4,product5};
+        Product[] expected = {product1, product2, product3, product4, product5};
         Product[] actual = mass.findAll();
 
         Assertions.assertArrayEquals(expected, actual);
@@ -37,7 +37,7 @@ public class ProductRepositoryTest {
         mass.save(product5);
         mass.removeById(2);
 
-        Product[] expected = {product1, product3,product4,product5};
+        Product[] expected = {product1, product3, product4, product5};
         Product[] actual = mass.findAll();
 
         Assertions.assertArrayEquals(expected, actual);
