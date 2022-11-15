@@ -25,19 +25,10 @@ public class SmartphoneTest {
     }
 
     @Test
-    public void matchesNotProductTestTest() {
+    public void matchesNotTestTest() {
 
         boolean expected = false;
-        boolean actual = phone.matches("Phone 2");
-
-        Assertions.assertEquals(expected, actual);
-    }
-
-    @Test
-    public void matchesNotSmartphoneTest() {
-
-        boolean expected = false;
-        boolean actual = phone.matches("Not Nokia");
+        boolean actual = phone.matches("Product");
 
         Assertions.assertEquals(expected, actual);
     }

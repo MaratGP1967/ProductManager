@@ -25,19 +25,10 @@ public class BookTest {
     }
 
     @Test
-    public void matchesNotProductTestTest() {
+    public void matchesNotTestTest() {
 
         boolean expected = false;
-        boolean actual = book.matches("Book 2");
-
-        Assertions.assertEquals(expected, actual);
-    }
-
-    @Test
-    public void matchesNotBookTest() {
-
-        boolean expected = false;
-        boolean actual = book.matches("Автор 2");
+        boolean actual = book.matches("Product");
 
         Assertions.assertEquals(expected, actual);
     }
