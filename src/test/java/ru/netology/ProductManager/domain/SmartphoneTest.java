@@ -25,7 +25,7 @@ public class SmartphoneTest {
     }
 
     @Test
-    public void matchesNotTestTest() {
+    public void matchesNotSmartphoneTest() {
 
         boolean expected = false;
         boolean actual = phone.matches("Product");

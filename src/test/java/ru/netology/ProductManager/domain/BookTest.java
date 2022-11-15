@@ -25,7 +25,7 @@ public class BookTest {
     }
 
     @Test
-    public void matchesNotTestTest() {
+    public void matchesNotBookTest() {
 
         boolean expected = false;
         boolean actual = book.matches("Product");
