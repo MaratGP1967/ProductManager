@@ -18,4 +18,15 @@ public class Product {
     public String getName() {
         return name;
     }
+
+    public boolean matches(String search) {
+        if (getName().contains(search)) {
+            return true;
+        } else {
+            return false;
+        }
+        // или в одну строку:
+        // return product.getName().contains(search);
+    }
+
 }

@@ -29,6 +29,7 @@ public class ProductManagerTest {
 
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
     public void searchByForAllTest() {
         ProductRepository mass = new ProductRepository();
@@ -47,7 +48,8 @@ public class ProductManagerTest {
         manager.add(product5);
 
         Product[] expected = {product1, product2, product3, product4, product5};
-        Product[] actual = manager.searchBy("Book");;
+        Product[] actual = manager.searchBy("Book");
+        ;
 
         Assertions.assertArrayEquals(expected, actual);
     }
